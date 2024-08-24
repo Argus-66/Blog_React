@@ -22,9 +22,9 @@ function App() {
 
   return !loading ? (
     <div className='min-h-sc'>
-
+      test
     </div>
-  ) : 
+  ) : (null)
 }
 
 export default App
