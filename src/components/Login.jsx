@@ -70,7 +70,7 @@ function Login() {
                         label= "Password: "
                         type="password"
                         placeholder="Enter Your Password"
-                        
+                        {...register}
                     />
                 </div>
             </form>
