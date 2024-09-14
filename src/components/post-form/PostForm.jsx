@@ -60,10 +60,12 @@ function PostForm(post) {
             .replace(/\s/g, "-");
 
         return ''
-        
+
     }, [])
 
-    React.useEffect
+    React.useEffect(() => {
+        const subscription = watch()
+    },[watch, slugTranform, setValue])
 
     return (
     <div>PostForm</div>
