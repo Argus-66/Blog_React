@@ -51,7 +51,19 @@ function PostForm(post) {
         }
     };
 
-    const slugTranform = 
+    const slugTranform = useCallback((value) => {
+        if (value && typeof value === 'string')  
+            return value
+            .trim()
+            .toLowerCase()
+            .replace(/[^a-zA-Z\d\s]+/g, "-")
+            .replace(/\s/g, "-");
+
+        return ''
+        
+    }, [])
+
+    React.useEffect
 
     return (
     <div>PostForm</div>
